@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container h1{
+    text-align: center;
+    margin: 10px 0px 20px;
+    font-size: 1.8rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sub-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}

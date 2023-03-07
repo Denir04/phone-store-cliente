@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container select{
+    font-size: 0.9rem;
+    padding: 0 10px;
+    margin: 5px 0px 15px;
+}

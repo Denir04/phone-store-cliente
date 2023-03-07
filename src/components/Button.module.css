@@ -1,0 +1,20 @@
+.button{
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 8px 0px;
+}
+
+.btn-primary{
+    background-color: var(--light-blue); 
+    color: white;
+}
+
+.btn-secondary{
+    background-color: var(--strong-light-blue); 
+    color: white;
+}
+
+.btn-cancel{
+    background-color: var(--light-red);
+    color: white;
+}

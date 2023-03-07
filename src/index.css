@@ -1,0 +1,37 @@
+:root {
+  --light-green-n-blue: #7abec3;
+  --light-beige: #dfd0d4;
+  --light-pink: #dbcbdb;
+  --normal-blue: #005eda;
+  --light-blue: #87abdb;
+  --strong-light-blue: #999fa6;
+  --light-gray: #999fa6;
+  --light-red: #b85e5e;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: inherit;
+  font-family: 'Golos Text', sans-serif;;
+}
+
+input, textarea, button, select{
+  font-family: inherit;
+  border: none;
+  height: 2.5rem;
+  width: 100%;
+}
+
+input:focus, select:focus{
+  outline: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}

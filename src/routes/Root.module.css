@@ -1,0 +1,30 @@
+.container header{
+    background-color: var(--light-green-n-blue);
+    height: 8vh;
+    padding: 0 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container main{
+    height: 92vh;
+}
+
+.container footer{
+    background-color: var(--light-green-n-blue);
+    height: 8vh;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.logo span{
+    font-weight: bold;
+}
+
+.perfil{
+    height: 40px;
+}

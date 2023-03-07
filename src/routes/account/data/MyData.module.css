@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content:space-around;
+    height: 100%;
+    margin-top: 30px;
+}
+
+.container a{
+    color: var(--normal-blue);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.edit-line{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}

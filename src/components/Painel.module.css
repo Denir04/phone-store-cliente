@@ -1,0 +1,10 @@
+.painel{
+    background-color: var(--light-beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 7px;
+    padding: 30px;
+    width: 40vw;
+    min-height: 70vh;
+}
