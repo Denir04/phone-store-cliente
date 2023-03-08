@@ -1,5 +1,6 @@
 .container{
     display: flex;
+    height: 100%;
 }
 
 .container nav{
@@ -23,4 +24,9 @@
 
 .active{
     font-weight: bold;
+}
+
+.title{
+    margin: 20px 0 40px 0;
+    font-size: 2rem;
 }

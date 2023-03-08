@@ -12,6 +12,7 @@
 }
 
 .container footer{
+    margin-top: 20px;
     background-color: var(--light-green-n-blue);
     height: 8vh;
 }

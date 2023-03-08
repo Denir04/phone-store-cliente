@@ -8,7 +8,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Checkbox from '../../../components/Checkbox'
 import SuccessWarn from '../../../components/SuccessWarn'
 
-const ViewAddress = () => {
+const RegisterNewAddress = () => {
   const [changed, setChanged] = useState(false);
   const navigate = useNavigate();
 
@@ -22,31 +22,17 @@ const ViewAddress = () => {
     {value: "private", text: "Privado"},
   ]
 
-  const address = {
-    indetify: "Minha Casa",
-    selectedResident: selectOptionsResidencia[1].value,
-    selectedPlace: selectOptionsLogradouro[1].value,
-    placeName: "Rua São Tomé de Aquino",
-    placeNumber: "172",
-    district: "Vila da Prata",
-    city: "Mogi das Cruzes",
-    state: "São Paulo",
-    country: "Brazil",
-    cep: "08445-890",
-  }
-
   return !changed ? (
     <div className={styles['container']} style={{marginTop: "20px"}}>
         <Painel width={70}>
-            <h1>Endereço Cadastrado</h1>
+            <h1>Registrar Novo Endereço</h1>
             <div>
                 <div className={`${styles["grid"]}`}>
-                    <Input label={"Identificação do endereço (apelido)"} value={address.indetify}/>
+                    <Input label={"Identificação do endereço (apelido)"}/>
                     <Select 
                         name={"selectedResident"} 
                         label={"Tipo de Residência"} 
                         options={selectOptionsResidencia}
-                        value={address.selectedResident}
                     />
                 </div>
                 <div className={`${styles["grid"]}`}>
@@ -54,19 +40,18 @@ const ViewAddress = () => {
                         name={"selectedPlace"} 
                         label={"Tipo Logradouro"} 
                         options={selectOptionsLogradouro}
-                        value={address.selectedPlace}
                     />
-                    <Input label={"Logradouro"} value={address.placeName}/>
-                    <Input label={"Número"} value={address.placeNumber}/>
+                    <Input label={"Logradouro"}/>
+                    <Input label={"Número"}/>
                 </div>
                 <div className={`${styles["grid"]}`}>
-                    <Input label={"Bairro"} value={address.district}/>
-                    <Input label={"Cidade"} value={address.city}/>
-                    <Input label={"Estado"} value={address.state}/>
-                    <Input label={"País"} value={address.country}/>
+                    <Input label={"Bairro"}/>
+                    <Input label={"Cidade"}/>
+                    <Input label={"Estado"}/>
+                    <Input label={"País"}/>
                 </div>
                 <div className={`${styles["grid"]}`}>
-                    <Input label={"CEP"} value={address.cep}/>
+                    <Input label={"CEP"}/>
                     <Input label={"Observações"}/>
                 </div>
                 <div className={styles["flex"]}>
@@ -80,14 +65,18 @@ const ViewAddress = () => {
                     <Link to={"/account/my-address"}>
                         <Button textButton={"Cancelar"} classButton="btn-cancel"/>
                     </Link>
-                    <Button textButton={"Salvar"} classButton="btn-primary" onClick={() => setChanged(true)}/>
+                    <Button 
+                        textButton={"Salvar"} 
+                        classButton="btn-primary"
+                        onClick={() => setChanged(true)}
+                    />
                 </div>
             </div>
         </Painel>
     </div>
-  ) : (
-    <SuccessWarn message={"Endereço Alterado com Sucesso"} onClick={() => navigate(-1)}/>
+  ): (
+    <SuccessWarn message={"Endereço Cadastrado com Sucesso"} onClick={() => navigate(-1)}/>
   )
 }
 
-export default ViewAddress;
+export default RegisterNewAddress;

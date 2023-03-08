@@ -4,7 +4,12 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 7px;
-    padding: 30px;
+    padding: 10px 30px 30px 30px;
     width: 40vw;
     min-height: 70vh;
+}
+
+.painel h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }

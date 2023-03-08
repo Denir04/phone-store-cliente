@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 
 const AddressCard = ({identify,resume,resident, delivery, billing}) => {
     const configAddress =[]
-    if(resident) configAddress.push(<span key={resident}>Residência</span>);
-    if(delivery) configAddress.push(<span key={delivery}>Entrega</span>);
-    if(billing) configAddress.push(<span key={billing}>Conbrança</span>);
+    if(resident) configAddress.push(<span key={"resident"}>Residência</span>);
+    if(delivery) configAddress.push(<span key={"delivery"}>Entrega</span>);
+    if(billing) configAddress.push(<span key={"billing"}>Cobrança</span>);
 
     return (
     <div className={styles["container"]}>

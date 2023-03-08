@@ -12,13 +12,15 @@ import RegisterCredential from './routes/register/RegisterCredential';
 import Account from './routes/account/Account';
 import MyData from './routes/account/data/MyData';
 import MyAddress from './routes/account/address/MyAddress';
-import MyRequests from './routes/account/MyRequests';
-import MyExchanges from './routes/account/MyExchanges';
-import MyTickets from './routes/account/MyTickets';
-import MyCards from './routes/account/MyCards';
+import MyRequests from './routes/account/requests/MyRequests';
+import MyExchanges from './routes/account/exchanges/MyExchanges';
+import MyTickets from './routes/account/tickets/MyTickets';
+import MyCards from './routes/account/cards/MyCards';
 import EditData from './routes/account/data/EditData';
 import EditPassword from './routes/account/data/EditPassword';
 import ViewAddress from './routes/account/address/ViewAddress';
+import RegisterCard from './routes/account/cards/RegisterCard';
+import RegisterNewAddress from './routes/account/address/RegisterNewAddress';
 
 
 const router = createBrowserRouter([
@@ -41,10 +43,12 @@ const router = createBrowserRouter([
           {path: "/account/edit-password",element: <EditPassword/>},
           {path: "/account/my-address",element: <MyAddress/>},
           {path: "/account/my-address/view",element: <ViewAddress/>},
+          {path: "/account/my-address/register",element: <RegisterNewAddress/>},
+          {path: "/account/my-cards",element: <MyCards/>},
+          {path: "/account/my-cards/register",element: <RegisterCard/>},
           {path: "/account/my-requests",element: <MyRequests/>},
           {path: "/account/my-exchanges",element: <MyExchanges/>},
           {path: "/account/my-tickets",element: <MyTickets/>},
-          {path: "/account/my-cards",element: <MyCards/>}
         ]
       }
     ]

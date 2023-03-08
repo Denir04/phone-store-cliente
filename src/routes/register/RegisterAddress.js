@@ -52,7 +52,9 @@ const RegisterAddress = () => {
                     <Input label={"CEP"}/>
                     <Input label={"Observações"}/>
                 </div>
-                <Checkbox label={"Registrar endereço residencial como endereço de cobrança e entrega padrão"}/>
+                <div className={styles["flex"]}>
+                    <Checkbox label={"Registrar endereço residencial como endereço de cobrança e entrega padrão"}/>
+                </div>
             </div>
             <div className={`${styles["container-actions"]}`}>
                 <div className={styles["actions"]}>
